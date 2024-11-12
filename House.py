@@ -13,3 +13,10 @@ class House:
                 
         else:   
             print('Такого этажа не существует') 
+            
+    # Домашняя работа по уроку "Специальные методы классов"
+    def __len__(self):
+        return self.number_of_floors
+    
+    def __str__(self):
+        return (f"Название: {self.name}, кол-во этажей: {self.number_of_floors}")
