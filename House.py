@@ -1,4 +1,13 @@
 class House:
+        # Домашняя работа по уроку "Различие атрибутов класса и экземпляра"
+    houses_history = []
+    
+    def __new__(cls, *args):
+        cls.houses_history.append(args)
+        return object.__new__(cls)
+    
+    def __del__(self):
+        print(f"{self.name} снесён, но он останется в истории")
     
     def __init__(self, name, number_of_floors):
         
@@ -56,3 +65,4 @@ class House:
 
     def __iadd__(self, value):
         return self.__add__(value)
+    

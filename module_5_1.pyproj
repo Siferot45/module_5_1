@@ -25,6 +25,7 @@
     <Compile Include="module_5_1.py" />
     <Compile Include="module_5_2.py" />
     <Compile Include="module_5_3.py" />
+    <Compile Include="module_5_4.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
