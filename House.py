@@ -65,4 +65,9 @@ class House:
 
     def __iadd__(self, value):
         return self.__add__(value)
+    """
+    Deleting items in the houses_history list
+    """
+    def history_clear():
+        House.houses_history.clear()
     
